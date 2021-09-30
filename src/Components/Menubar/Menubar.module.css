@@ -1,0 +1,49 @@
+.Menu{
+    height: 100%;
+    width: 280px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(41, 35, 88);
+    z-index: 999;
+    color: white;
+    font-size: 26px;
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: all .25s ease-out;
+}
+.open {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.head-line{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+}
+.list{
+    margin-top: 40px;
+}
+.link{
+    display:block ;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 22px;
+    text-align: center;
+    color: white;
+    list-style: none;
+    width: 90%;
+    word-spacing: 3px;
+    margin: 15px auto;
+    transition: all .2s ease-in;
+    border-radius: 30px;
+}
+
+.link:hover {
+    color: rgb(41, 35, 88);
+    background-color: white;
+
+}

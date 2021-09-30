@@ -1,0 +1,45 @@
+.item {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 600px;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: 2px solid rgb(41, 35, 88);
+    border-radius: 30px;
+    transition: all .25s ease-in;
+    text-transform: capitalize;
+}
+.item:hover {
+    background-color: rgb(60, 53, 116);
+    color: white;
+}
+.item:hover .heading {
+    color: #ddd;
+}
+.heading {
+    font-size: 10px;
+    color: rgb(94, 94, 94);
+    text-decoration: none;
+}
+.link {
+    text-decoration: none;
+    color: black;
+    
+}
+
+@media (max-width:768px) {
+    .item{
+        flex-direction: column;
+        width: 100%;
+    }
+    .link {
+        width: 70%;
+        margin: 0 auto;
+    }
+    .col{
+        margin: 7px auto;
+    }
+    
+}

@@ -1,0 +1,85 @@
+.expenseBox{
+    height: 100%;
+    border: 2px solid rgb(41, 35, 88);
+    margin-right: 50px;
+    overflow-y: scroll;
+    height: 70vh;
+}
+
+.expenseBox h1{
+    margin-top: 15px;
+    color: rgb(41, 35, 88);
+    font-family: 'Josefin Slab',serif;
+}
+
+.expenseItem {
+    text-transform: capitalize;
+    width: 60%;
+    padding: 10px 25px;
+    border-radius: 10px;
+    margin: 15px auto;
+    justify-content: space-between;
+    display: flex;
+    font-size: 18px;
+    border: 2px solid rgb(41, 35, 88);
+}
+
+.expenseItem button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 22px;
+    color: #777;
+    cursor: pointer;
+    transition: all .2s ease-out;
+}
+.expenseItem button:hover {
+    color: rgb(219, 57, 57);
+}
+
+.newEntry {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 10px auto;
+    align-items: center;
+    padding: 10px 20px ;
+    border-radius: 10px;
+    border: 2px solid rgb(41, 35, 88);
+}
+
+.newEntry input {
+    padding: 3px;
+    border-radius: 25px;
+}
+
+.newEntry input:focus, .newEntry input:active {
+    outline: none;
+}
+
+.newEntry button{
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    font-size: 22px;
+    color: rgb(47, 165, 47);
+}
+
+.newEntry button:focus {
+    outline: none;
+}
+
+
+@media (max-width: 1200px){
+    .expenseBox {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+    .newEntry{
+        flex-direction: column;
+        width: 50%;
+    }
+    .newEntry input {
+        margin: 10px auto;
+    }
+}

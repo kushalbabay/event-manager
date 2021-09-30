@@ -1,0 +1,169 @@
+.contributionItem{
+    display: flex;
+    text-transform: capitalize;
+    font-size: 18px;
+    width: 80%;
+    justify-content: space-between;
+    padding: 10px 25px;
+    border: 2px solid rgb(41, 35, 88);
+    border-radius: 10px;
+    margin: 15px auto;
+}
+.heading{
+    font-size: 10px;
+    color: #666;
+}
+.green {
+    color: rgb(34, 185, 34);
+}
+.red {
+    color: rgb(163, 24, 24);
+}
+.newEntry {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 90%;
+    margin: 10px auto;
+    align-items: center;
+    padding: 10px 20px ;
+    border-radius: 10px;
+    border: 2px solid rgb(41, 35, 88);
+}
+.newEntry input {
+    padding: 0 8px;
+    border: none;
+    border-bottom: 2px solid  rgb(41, 35, 88) ;
+    text-align: left;
+    width: 140px;
+}
+.newEntry input:focus, .newEntry input:active {
+    outline: none;
+}
+.newEntry button{
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    font-size: 22px;
+    color: rgb(47, 165, 47);
+}
+.newEntry button:focus {
+    outline: none;
+}
+.contributionBox{
+    height: 70vh;
+    overflow-y: scroll;
+    width: 45vw;
+    border: 2px solid rgb(41, 35, 88);
+}
+.contributionBox h1 {
+    margin-top: 15px;
+    color: rgb(41, 35, 88);
+    font-family: 'Josefin Slab',serif;
+}
+.headline{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+
+.singleMember {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 6px;
+    width: 240px;
+    margin: 5px auto;
+    border: 1px solid rgb(41, 35, 88);
+    border-radius: 10px;
+}
+.singleMember:hover {
+    background-color: rgb(209, 209, 209);
+}
+.singleMember p {
+    padding: 0 10px;
+}
+
+.selectMember {
+    position: absolute;
+    top: 40px;
+    height: 0;
+    overflow-y: hidden;
+    transition: all .3s ease-in;
+    background: white;
+    border-radius: 5px;
+}
+.show {
+    padding: 5px;
+    border: 1px solid black;
+    overflow-y: scroll;
+    height: 180px;
+}
+.selectMember::-webkit-scrollbar{
+    width: 8px;    
+}
+.selectMember::-webkit-scrollbar-thumb{
+    background-color: rgb(199, 199, 199);
+    border-radius: 10px;
+    padding: 2px;
+}
+.selectMember::-webkit-scrollbar-thumb:hover{
+    background-color: rgb(148, 148, 148);
+}
+.ContributionInput {
+    margin-top: 12px;
+    text-transform: capitalize;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.resetButton {
+    color: #777777;
+    cursor: pointer;
+    font-size: 18px;
+    transition: all .3s ease-out;
+}
+.resetButton:hover {
+    color: rgb(245, 41, 41);
+}
+
+@media (max-width: 1200px){
+    .newEntry{
+        flex-direction: column;
+        width: 50%;
+    }
+    .newEntry input {
+        margin: 10px auto;
+    }
+    .contributionBox{
+        width: auto ;
+    }
+    .ContributionInput{
+        flex-direction: column;
+    }
+}
+@media (max-width: 600px){
+    .headline{
+        flex-direction: column;
+    }
+    .ContributionInput > p{
+        margin: 15px auto;
+    }
+    .singleMember{
+        width: 100%;
+    }
+    .contributionItem{
+        flex-direction: column;
+    }
+    .contributionItem p{
+        margin-bottom: 14px;
+    }
+    .contributionItem .heading{
+        margin-bottom: 0;
+    }
+}

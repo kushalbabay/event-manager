@@ -1,0 +1,45 @@
+.memberList {
+    display: flex;
+    justify-content: space-between;
+    width: 460px;
+    align-items: center;
+    margin: 10px auto;
+    padding: 8px 20px;
+    border: 2px solid rgba(58, 58, 58, 0.705);
+    border-radius: 10px;
+}
+.memberList p {
+    margin-right: 50px;
+    text-transform: capitalize;
+}
+
+.memberList button {
+    cursor: pointer;
+    color: rgb(136, 136, 136);
+    padding: 5px;
+    border: none;
+    background-color: transparent;
+    font-size: 18px;
+    transition: all .2s ease-out;
+}
+.memberList button:hover{
+    color: rgb(201, 47, 47);
+}
+.heading {
+    font-size: 10px;
+    color: rgb(94, 94, 94);
+}
+
+@media (max-width: 768px) {
+    .memberList {
+        flex-direction: column;
+        width: 80%;
+    }
+    .memberList p{
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+    .memberList .heading {
+        margin-bottom: 0;
+    }
+}

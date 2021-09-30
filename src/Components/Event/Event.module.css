@@ -1,0 +1,110 @@
+.link {
+    position: absolute;
+    top: 0;
+    font-size: 20px;
+    margin-top: 5px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    text-decoration: underline;
+    color: black;
+    text-transform: capitalize;
+}
+.container {
+    margin: 0 auto;
+    width: 60%;
+}
+.link > p {
+    margin-left: 6px;
+}
+.title{
+    color: teal;
+    margin-top: 20px;
+    font-family: 'Josefin Slab', serif;
+    font-size: 56px;
+    text-transform: capitalize;
+}
+.desc{
+    font-size: 24px;
+    color: #444;
+    font-family: 'Poppins';
+    margin-top: 20px;
+    text-align: left;
+    text-transform: capitalize;
+}
+.date {
+    color: #444;
+    margin-top: 30px;
+    text-align: right;
+    font-size: 20px;
+    font-family: 'Poppins',serif;
+}
+.members{
+    margin-top: 30px;
+    text-align: right;
+    font-size: 20px;
+    color: #444;
+    font-family: 'Poppins',serif;
+}
+.delete {
+    position: relative;
+    right: 0;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 8px 12px;
+    margin-top: 20px;
+    background-color: transparent;
+    border: 2px solid  rgb(235, 36, 36);
+    border-radius: 15px;
+    color:  rgb(235, 36, 36);
+    font-family: 'Poppins',serif;
+    transition: all .2s ease-in-out;
+}
+
+.delete:hover {
+    color: white;
+    background-color: rgb(235, 36, 36);
+}
+.edit {
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 8px 12px;
+    margin-top: 20px;
+    background-color: transparent;
+    border: 2px solid  rgb(21, 78, 143);
+    border-radius: 15px;
+    color:  rgb(21, 78, 143);
+    font-family: 'Poppins',serif;
+    transition: all .2s ease-in-out;
+}
+
+.edit:hover {
+    color: white;
+    background-color:rgb(21, 78, 143);
+}
+.buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width:1024px){
+    .container {
+        margin-top: 50px;
+    }
+    .desc{
+        text-align: center;
+    }
+    .date {
+        margin-bottom: 15px;
+        top: 0;
+        text-align: center;
+    }
+    .members{
+        text-align: center;
+    }
+    .delete {
+        margin-top: 20px;
+    }
+}

@@ -1,0 +1,17 @@
+*{
+    text-align: center;
+}
+
+.heading{
+    font-size: 54px;
+    font-family: 'Josefin Slab', serif;
+    margin-top: 30px;
+}
+.heading+p {
+    font-size: 32px;
+    margin-top: 30px;
+}
+.list {
+    font-size: 14px;
+    margin: 20px 0;
+}

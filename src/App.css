@@ -1,0 +1,13 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+main{
+  width: 100%;
+  height: calc(100vh - 60px);
+  position: absolute;
+  right: 0;
+}
